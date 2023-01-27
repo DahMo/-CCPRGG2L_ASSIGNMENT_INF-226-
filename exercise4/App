@@ -1,0 +1,33 @@
+package exercise4;
+
+public class App {
+    
+    public static void main(String [] args){
+
+        Person Me = new Person ("Nivek", 19);
+
+        Person Friend = new Person ("Anne Rain", 18);
+        
+        Me.Addfriend(Friend);
+
+
+        Pet dog = new Pet("Nori", 2, Me);
+
+        dog.showOwner();
+
+
+        Person Classmate1 = new Person ("Dubu", 19);
+        Person Classmate2 = new Person ("Chaer", 19);
+        Person Classmate3 = new Person ("Ji heon", 18);
+
+        Me.addClassmate(Classmate1);
+        Me.addClassmate(Classmate2);
+        Me.addClassmate(Classmate3);
+
+        
+        Car sportscar = new Car("AE86", Me);
+        Car familycar = new Car("Rubicon", Me);
+        sportscar.carOwner();
+        familycar.carOwner();
+    }
+}
