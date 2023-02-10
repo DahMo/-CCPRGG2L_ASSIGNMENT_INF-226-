@@ -1,0 +1,17 @@
+public class app {
+    
+public static void main(String[] args) throws Exception {
+        
+        person me = new person();
+
+        //System.out.println(me.name);
+
+        me.setName("Nivek");
+
+        System.out.println(getName());
+
+        son Me = new son();
+        System.out.println(me.surname);
+        me.showSurname();
+    }
+}
