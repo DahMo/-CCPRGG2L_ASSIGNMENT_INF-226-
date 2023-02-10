@@ -1,0 +1,10 @@
+public class daddy{
+
+    protected String surname = "Reyes";
+
+    protected void showSurname(){
+        System.out.println("My family name is " + surname);
+
+    
+    }
+}
