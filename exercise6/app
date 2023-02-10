@@ -1,0 +1,39 @@
+public class app {
+    public static void main(String[] args) throws Exception {
+
+        groceryitem item1 = new freshmilk();
+        item1.name = "Cowhead";
+        item1.price = 150;
+        item1.showItemName();
+
+        groceryitem item2 = new coffee();
+        item2.name = "Great Taste White";
+        item2.price = 50;
+        item2.showItemName();
+        
+        cashier l1 = new cashier();
+        l1.checkout(item1);
+        l1.showItemPrice(item1);
+
+        l1.checkout(item2);
+        l1.showItemPrice(item2);
+        
+        groceryitem[] itemArray = new groceryitem[2];
+
+        itemArray[0] = item1;
+        itemArray[1] = item2;
+        
+        double totalAmount = 0.00;
+        for (int i = 0; i < itemArray.length; i++){
+            itemArray[i].showItemName();
+            System.out.println(itemArray[i].price);
+
+            totalAmount = totalAmount + itemArray[i].price;
+        }
+        System.out.println("total amount spent: " + totalAmount);
+
+
+        dragon drag = new dragon();
+        drag.eat();
+    }
+} 
